@@ -1,0 +1,34 @@
+{
+  "name": "spacex_launchviewer",
+  "version": "1.0.0",
+  "description": "App that displays SpaceX Launches",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattyStrem/SpaceX_LaunchViewer.git"
+  },
+  "author": "Mathew Street",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattyStrem/SpaceX_LaunchViewer/issues"
+  },
+  "homepage": "https://github.com/MattyStrem/SpaceX_LaunchViewer#readme",
+  "dependencies": {
+    "@apollo/client": "^3.3.21",
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
